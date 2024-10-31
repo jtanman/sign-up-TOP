@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Odin Signup Page with Video Background</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="./media/2024_10_30_23_54_38_947_792431.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="logo">ODIN</div>
+            <p class="photo-credit">Background video by Halie West on Unsplash</p>
+        </div>
+        <div class="form-container">
+            <h2>This is not a real online service!</h2>
+            <p>You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p class="emphasis">You <strong>know</strong> you want to.</p>
+
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <p class="error-message">* Passwords do not match</p>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
