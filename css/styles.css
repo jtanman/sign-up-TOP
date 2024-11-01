@@ -111,8 +111,10 @@ p {
     flex-direction: column;
 }
 
+/* Styles for input groups */
 .input-group {
     display: flex;
+    flex-direction: row;
     gap: 10px;
     margin-bottom: 15px;
 }
@@ -124,10 +126,24 @@ p {
     border-radius: 4px;
 }
 
-.error-message {
-    color: red;
-    font-size: 14px;
-    margin-bottom: 15px;
+#phone-message-row {
+    margin-bottom: 0;
+}
+
+#phone-message {
+    margin-left: calc(50% + 5px); /* Aligns with phone number input */
+}
+
+/* Styles for invalid password fields with increased specificity */
+.input-group input.invalid {
+    border: 2px solid red;
+}
+
+/* Focused input styles */
+input:focus {
+    border: 2px solid blue; /* Blue border */
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Subtle blue box-shadow */
+    outline: none; /* Remove default outline */
 }
 
 button {
@@ -153,4 +169,22 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Styles for invalid input fields */
+.invalid {
+    border: 2px solid red;
+}
+
+/* Styles for the hidden message */
+.hidden {
+    display: none;
+}
+
+/* Styles for the visible message */
+.visible {
+    color: red;
+    display: block;
+    margin-top: 5px; /* Add some space between the input and the message */
+    margin-bottom: 15px;
 }
