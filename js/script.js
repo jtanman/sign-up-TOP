@@ -1,4 +1,4 @@
-document.getElementById('signup-form').addEventListener('submit', function(event) {
+document.getElementById('signup-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form submission
 
     const password = document.getElementById('password').value;
@@ -18,7 +18,7 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     }
 });
 
-document.getElementById('phone').addEventListener('blur', function() {
+document.getElementById('phone').addEventListener('blur', function () {
     const phoneInput = document.getElementById('phone').value;
     const phonePattern = /^[0-9]*$/; // Allow empty values
 
